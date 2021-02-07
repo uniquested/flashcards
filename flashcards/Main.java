@@ -105,7 +105,7 @@ public class Main {
         System.out.println("File name: ");
         String path = scanner.next();
         String leftovers = scanner.nextLine();
-        File file = new File("./Flashcards/task/src/" + path);
+        File file = new File("./flashcards/" + path);
         try (Scanner sc = new Scanner(file)) {
             FileWriter writer = new FileWriter(file);
             for (Card card : cards) {
@@ -130,7 +130,7 @@ public class Main {
         System.out.println("File name: ");
         String path = scanner.next();
         String leftovers = scanner.nextLine();
-        File file = new File("./Flashcards/task/src/" + path);
+        File file = new File("./flashcards/" + path);
         try (Scanner sc = new Scanner(file)) {
             while (sc.hasNext()){
                 name = sc.nextLine();
